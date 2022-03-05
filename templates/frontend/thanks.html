@@ -1,0 +1,40 @@
+{% extends 'frontend/base.html' %}{% load static %}
+{% block title %}Success - Email Sent Successfully{% endblock title %}
+{% block seo_meta %}
+<meta name="description" content="WebinoxMedia's Services">
+<meta name="author" content="Yuvraaj Chandrakant Limbole - WebinoxMedia" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="googlebot" content="noindex, nofollow" />
+<meta name="bingbot" content="noindex, nofollow" />
+<link rel="canonical" href="https://www.webinoxmedia.com/services/" />
+<link rel="alternate" href="https://www.webinoxmedia.com/services/" hreflang="en-in" />
+{% endblock seo_meta %}
+{% block schema_json_markup %}{% endblock schema_json_markup %}
+{% block content %}
+<!-- Banner Section Start -->
+<div class="rs-banner style3 rs-rain-animate modify1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-content">
+                    <h1 class="title">Thank you </h1>
+                    <p class="desc">
+                        Thank you for contacing us. Our representetive will get in touch with you shortly.
+                    </p>
+                    <ul class="banner-btn">
+                        <li><a class="readon started" href="{% url 'Home Page' %}">Back to Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>                
+    <div class="images-part hidden-md">
+        <img src="{% static 'images/banner/banner-4.png' %}" alt="">
+    </div>
+    <div class="line-inner style2">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</div>
+{% endblock content %}

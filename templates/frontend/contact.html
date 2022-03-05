@@ -1,0 +1,138 @@
+{% extends 'frontend/base.html' %}{% load static %}
+{% block title %}Contact Page{% endblock title %}
+{% block seo_meta %}
+<meta name="description" content="WebinoxMedias contact page">
+<meta name="keyword" content="web aaplication development agency, local seo agency, Google Ads, Facebook Ads, Social Media Marketing, Lead generation, seo agency, digital marketing agency, ppc marketing, Web Development Agency">
+<meta name="author" content="Yuvraaj Chandrakant Limbole - WebinoxMedia" />
+<meta name="robots" content="all" />
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta property="article:published_time" content="2021-08-10GMT+053010:25:12+05:30" />
+<meta property="article:modified_time" content="2021-08-10GMT+053009:05:21+05:30" />
+<link rel="canonical" href="https://www.webinoxmedia.com/contact/" />
+<link rel="alternate" href="https://www.webinoxmedia.com/contact/" hreflang="en-in" />
+{% endblock seo_meta %}
+{% block schema_json_markup %}
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "Corporation",
+        "url": "https://www.webinoxmedia.com/",
+        "logo": "https://www.webinoxmedia.com/images/logo.png"
+    }
+</script>
+{% endblock schema_json_markup %}
+{% block content %}
+<!-- Banner Section Start -->
+<div class="rs-banner style3 rs-rain-animate modify1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-content">
+                    <h1 class="title">Digital Services for Your Business </h1>
+                    <p class="desc">
+                        We are leading Digital solutions providing Agency all over the world doing over 3+ years.
+                    </p>
+                    <ul class="banner-btn">
+                        <li><a class="readon started" href="#">Get Started</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>                
+    <div class="images-part hidden-md">
+        <img src="{% static 'images/banner/banner-4.png' %}" alt="digital marketing banner">
+    </div>
+    <div class="line-inner style2">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</div>
+<!-- Banner Section End -->
+
+<!-- Contact Section Start -->
+<div class="rs-contact pt-120 md-pt-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 md-mb-60">
+                <div class="contact-box">
+                    <div class="sec-title mb-45">
+                        <span class="sub-text new-text white-color">Let's Talk</span>
+                        <h2 class="title white-color">Speak With Experts.</h2>
+                    </div>
+                    <div class="address-box mb-25">
+                        <div class="address-icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="address-text">
+                            <span class="label">Email:</span>
+                            <a href="mailto:support@webinoxmedia.com" target="_blank" rel="nofollow">support@webinoxmedia.com</a>
+                        </div>
+                    </div>
+                    <div class="address-box mb-25">
+                        <div class="address-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="address-text">
+                            <span class="label">Phone:</span>
+                            <a href="tel:+918263931667" target="_blank" rel="nofollow">(+91)-8263931667</a>
+                        </div>
+                    </div>
+                    <div class="address-box">
+                        <div class="address-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="address-text">
+                            <span class="label">Address:</span>
+                            <div class="desc"><a href="https://g.page/WebinoxMedia?share" target="_blank" rel="nofollow">Lane no 7D, Tingre Nagar, Pune</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-lg-8 pl-70 md-pl-15">
+                <div class="contact-widget">
+                    <div class="sec-title2 mb-40">
+                        <span class="sub-text contact mb-15">Get In Touch</span>
+                        <h2 class="title testi-title">Tell us Your Requierments</h2>
+                    </div>
+                    <div id="form-messages"></div>
+                    <form id="contact-form" method="post" action="">
+                        {% csrf_token %}
+                        <fieldset>
+                            <div class="row">
+                                <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                    <input class="from-control" type="text" id="name" name="name" placeholder="Name" required="">
+                                </div> 
+                                <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                    <input class="from-control" type="text" id="email" name="email" placeholder="E-Mail" required="">
+                                </div>   
+                                <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                    <input class="from-control" type="text" id="phone" name="phone" placeholder="Phone Number" required="">
+                                </div>   
+                                <div class="col-lg-6 mb-30 col-md-6 col-sm-6">
+                                    <input class="from-control" type="text" id="Website" name="websitelink" placeholder="Your Website" required="">
+                                </div>
+                                <div class="col-lg-12 mb-30">
+                                    <textarea class="from-control" id="message" name="message" placeholder="Your message Here" required=""></textarea>
+                                </div>
+                            </div>
+                            <div class="btn-part">                                            
+                                <div class="form-group mb-0">
+                                    <input class="readon learn-more submit" type="submit" value="Request Call Back">
+                                </div>
+                            </div> 
+                        </fieldset>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map-canvas pt-120 md-pt-80">
+        <!--
+        <iframe src="https://maps.google.com/maps?q=rstheme&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15127.611339563073!2d73.8911345!3d18.5784188!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x382f29400fb682fb!2sWebinoxMedia%20-%20Leading%20SEO%20Agency%20in%20Pune%20%7C%20Digital%20Marketing%20Agency%20in%20India%20%7C%20Web%20Development%20Agency%20in%20Pune%2C%20Mumbai%20and%20India!5e0!3m2!1sen!2sin!4v1629105273466!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div> 
+</div>
+<!-- Contact Section Start -->
+{% endblock content %}
